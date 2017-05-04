@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Reveal.js 3 Slide Demo</title>
+  <meta name="description" content="使用HTML制作Reveal.js框架幻灯片">
+  <meta name="author" content="Dong Renwen">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <!-- <link href="http://cdn.bootcss.com/reveal.js/3.4.1/css/print/paper.css" rel="stylesheet"> -->
+  <!-- <link href="http://cdn.bootcss.com/reveal.js/3.4.1/css/print/paper.min.css" rel="stylesheet"> -->
+  <!-- <link href="http://cdn.bootcss.com/reveal.js/3.4.1/css/print/pdf.css" rel="stylesheet"> -->
+  <!-- <link href="http://cdn.bootcss.com/reveal.js/3.4.1/css/print/pdf.min.css" rel="stylesheet"> -->
+  <!-- <link href="http://cdn.bootcss.com/reveal.js/3.4.1/css/reveal.css" rel="stylesheet"> -->
+  <link href="http://cdn.bootcss.com/reveal.js/3.4.1/css/reveal.min.css" rel="stylesheet">
+  <!-- <link href="http://cdn.bootcss.com/reveal.js/3.4.1/css/theme/beige.css" rel="stylesheet"> -->
+  <!-- <link href="http://cdn.bootcss.com/reveal.js/3.4.1/css/theme/beige.min.css" rel="stylesheet"> -->
+  <!-- <link href="http://cdn.bootcss.com/reveal.js/3.4.1/css/theme/black.css" rel="stylesheet"> -->
+  <!-- <link href="http://cdn.bootcss.com/reveal.js/3.4.1/css/theme/black.min.css" rel="stylesheet"> -->
+
+  <!-- 拷贝的内容，设置id为theme -->
+  <link href="http://cdn.bootcss.com/reveal.js/3.4.1/css/theme/black.min.css" rel="stylesheet" id="theme">
+
+  <!-- <link href="http://cdn.bootcss.com/reveal.js/3.4.1/css/theme/blood.css" rel="stylesheet"> -->
+  <!-- <link href="http://cdn.bootcss.com/reveal.js/3.4.1/css/theme/blood.min.css" rel="stylesheet"> -->
+  <!-- <link href="http://cdn.bootcss.com/reveal.js/3.4.1/css/theme/league.css" rel="stylesheet"> -->
+  <!-- <link href="http://cdn.bootcss.com/reveal.js/3.4.1/css/theme/league.min.css" rel="stylesheet"> -->
+  <!-- <link href="http://cdn.bootcss.com/reveal.js/3.4.1/css/theme/moon.css" rel="stylesheet"> -->
+  <!-- <link href="http://cdn.bootcss.com/reveal.js/3.4.1/css/theme/moon.min.css" rel="stylesheet"> -->
+  <!-- <link href="http://cdn.bootcss.com/reveal.js/3.4.1/css/theme/night.css" rel="stylesheet"> -->
+  <!-- <link href="http://cdn.bootcss.com/reveal.js/3.4.1/css/theme/night.min.css" rel="stylesheet"> -->
+  <!-- <link href="http://cdn.bootcss.com/reveal.js/3.4.1/css/theme/serif.css" rel="stylesheet"> -->
+  <!-- <link href="http://cdn.bootcss.com/reveal.js/3.4.1/css/theme/serif.min.css" rel="stylesheet"> -->
+  <!-- <link href="http://cdn.bootcss.com/reveal.js/3.4.1/css/theme/simple.css" rel="stylesheet"> -->
+  <!-- <link href="http://cdn.bootcss.com/reveal.js/3.4.1/css/theme/simple.min.css" rel="stylesheet"> -->
+  <!-- <link href="http://cdn.bootcss.com/reveal.js/3.4.1/css/theme/sky.css" rel="stylesheet"> -->
+  <!-- <link href="http://cdn.bootcss.com/reveal.js/3.4.1/css/theme/sky.min.css" rel="stylesheet"> -->
+  <!-- <link href="http://cdn.bootcss.com/reveal.js/3.4.1/css/theme/solarized.css" rel="stylesheet"> -->
+  <!-- <link href="http://cdn.bootcss.com/reveal.js/3.4.1/css/theme/solarized.min.css" rel="stylesheet"> -->
+  <!-- <link href="http://cdn.bootcss.com/reveal.js/3.4.1/css/theme/white.css" rel="stylesheet"> -->
+  <!-- <link href="http://cdn.bootcss.com/reveal.js/3.4.1/css/theme/white.min.css" rel="stylesheet"> -->
+  <!-- <script src="http://cdn.bootcss.com/reveal.js/3.4.1/js/reveal.js"></script> -->
+  <script src="http://cdn.bootcss.com/reveal.js/3.4.1/js/reveal.min.js"></script>
+  <!-- Theme used for syntax highlighting of code -->
+  <!-- <link href="http://cdn.bootcss.com/reveal.js/3.4.1/lib/css/zenburn.css" rel="stylesheet"> -->
+  <link href="http://cdn.bootcss.com/reveal.js/3.4.1/lib/css/zenburn.min.css" rel="stylesheet">
+  <!-- <link href="http://cdn.bootcss.com/reveal.js/3.4.1/lib/font/league-gothic/league-gothic.css" rel="stylesheet"> -->
+  <!-- <link href="http://cdn.bootcss.com/reveal.js/3.4.1/lib/font/league-gothic/league-gothic.min.css" rel="stylesheet"> -->
+  <!-- <link href="http://cdn.bootcss.com/reveal.js/3.4.1/lib/font/source-sans-pro/source-sans-pro.css" rel="stylesheet"> -->
+  <!-- <link href="http://cdn.bootcss.com/reveal.js/3.4.1/lib/font/source-sans-pro/source-sans-pro.min.css" rel="stylesheet"> -->
+  <!-- <script src="http://cdn.bootcss.com/reveal.js/3.4.1/lib/js/classList.js"></script> -->
+  <script src="http://cdn.bootcss.com/reveal.js/3.4.1/lib/js/head.min.js"></script>
+  <!-- <script src="http://cdn.bootcss.com/reveal.js/3.4.1/lib/js/html5shiv.js"></script> -->
+  <!-- <script src="http://cdn.bootcss.com/reveal.js/3.4.1/plugin/highlight/highlight.js"></script> -->
+  <!-- <script src="http://cdn.bootcss.com/reveal.js/3.4.1/plugin/highlight/highlight.min.js"></script> -->
+  <!-- <script src="http://cdn.bootcss.com/reveal.js/3.4.1/plugin/markdown/markdown.js"></script> -->
+  <!-- <script src="http://cdn.bootcss.com/reveal.js/3.4.1/plugin/markdown/markdown.min.js"></script> -->
+  <!-- <script src="http://cdn.bootcss.com/reveal.js/3.4.1/plugin/markdown/marked.js"></script> -->
+  <!-- <script src="http://cdn.bootcss.com/reveal.js/3.4.1/plugin/math/math.js"></script> -->
+  <!-- <script src="http://cdn.bootcss.com/reveal.js/3.4.1/plugin/math/math.min.js"></script> -->
+  <!-- <script src="http://cdn.bootcss.com/reveal.js/3.4.1/plugin/multiplex/client.js"></script> -->
+  <!-- <script src="http://cdn.bootcss.com/reveal.js/3.4.1/plugin/multiplex/client.min.js"></script> -->
+  <!-- <script src="http://cdn.bootcss.com/reveal.js/3.4.1/plugin/multiplex/index.js"></script> -->
+  <!-- <script src="http://cdn.bootcss.com/reveal.js/3.4.1/plugin/multiplex/index.min.js"></script> -->
+  <!-- <script src="http://cdn.bootcss.com/reveal.js/3.4.1/plugin/multiplex/master.js"></script> -->
+  <!-- <script src="http://cdn.bootcss.com/reveal.js/3.4.1/plugin/multiplex/master.min.js"></script> -->
+  <!-- <script src="http://cdn.bootcss.com/reveal.js/3.4.1/plugin/notes-server/client.js"></script> -->
+  <!-- <script src="http://cdn.bootcss.com/reveal.js/3.4.1/plugin/notes-server/client.min.js"></script> -->
+  <!-- <script src="http://cdn.bootcss.com/reveal.js/3.4.1/plugin/notes-server/index.js"></script> -->
+  <!-- <script src="http://cdn.bootcss.com/reveal.js/3.4.1/plugin/notes-server/index.min.js"></script> -->
+  <!-- <script src="http://cdn.bootcss.com/reveal.js/3.4.1/plugin/notes/notes.js"></script> -->
+  <!-- <script src="http://cdn.bootcss.com/reveal.js/3.4.1/plugin/notes/notes.min.js"></script> -->
+  <!-- <script src="http://cdn.bootcss.com/reveal.js/3.4.1/plugin/print-pdf/print-pdf.js"></script> -->
+  <!-- <script src="http://cdn.bootcss.com/reveal.js/3.4.1/plugin/print-pdf/print-pdf.min.js"></script> -->
+  <!-- <script src="http://cdn.bootcss.com/reveal.js/3.4.1/plugin/search/search.js"></script> -->
+  <!-- <script src="http://cdn.bootcss.com/reveal.js/3.4.1/plugin/search/search.min.js"></script> -->
+  <!-- <script src="http://cdn.bootcss.com/reveal.js/3.4.1/plugin/zoom-js/zoom.js"></script> -->
+  <!-- <script src="http://cdn.bootcss.com/reveal.js/3.4.1/plugin/zoom-js/zoom.min.js"></script> -->
+  <!--Add support for earlier versions of Internet Explorer -->
+  <!--[if lt IE 9]>
+  <script src="lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <!-- Wrap the entire slide show in a div using the "reveal" class. -->
+  <div class="reveal">
+    <!-- Wrap all slides in a single "slides" class -->
+    <div class="slides">
+      <!-- Each section element contains an individual slide -->
+      <section>
+        <h1>Reveal.js</h1>
+        <h3>使用Reveal.js制作的HTML演示</h3>
+        <p>
+          <small>源作者：<a href="http://hakim.se">Hakim El Hattab</a> / 翻译：<a href="http://dongrenwen.coding.me">Dong Renwen</a></small>
+        </p>
+      </section>
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <section>
+        <h2>Hello There</h2>
+        <p>
+          reveal.js可以使用HTML创建出漂亮的幻灯片。
+          <br>
+          这个例子向您展示出reveal.js都可以完成哪些。
+        </p>
+      </section>
+      <!-- Example of nested vertical slides -->
+      <section>
+        <section>
+          <h2>垂直幻灯片</h2>
+          <p>幻灯片被允许彼此之间相互嵌套。</p>
+          <p>可以使用<em>Space</em>键浏览所有的幻灯片。</p>
+          <br>
+          <a href="#" class="navigate-down">
+            <img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+          </a>
+        </section>
+        <section>
+          <h2>Basement Level 1</h2>
+          <p>嵌套式幻灯片被用在有多个水平级别的幻灯片中，以便添加更多详细信息。</p>
+        </section>
+        <section>
+          <h2>Basement Level 2</h2>
+          <p>就是这样，是时候回来了。</p>
+          <br>
+          <a href="#/2">
+            <img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
+          </a>
+        </section>
+      </section>
+
+      <section>
+        <h2>概览模式</h2>
+        <p>
+          按 <strong>ESC</strong> 键进入到概览模式
+        </p>
+        <p>
+          在概览模式下可以通过<br> <em>鼠标点击</em><br><em>方向键+Enter键</em> <br>的方式选取需要展示的幻灯片。
+        </p>
+      </section>
+
+      <section>
+        <h2>触摸优化</h2>
+        <p>
+          在手机或者平板设备上，<br>这个演示文稿依然可以看上去很棒。<br>在这些移动设备上只需要滑动屏幕即可。
+        </p>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## 支持Markdown
+
+          使用内联或者外部的Markdown进行内容的编写。
+          说明及更多的信息参照[readme](https://github.com/hakimel/reveal.js#markdown)。
+
+          ```
+          <section data-markdown>
+            ## 支持Markdown
+
+            使用内联或者外部的Markdown进行内容的编写。
+            说明及更多的信息参照[readme](https://github.com/hakimel/reveal.js#markdown)。
+          </section>
+          ```
+        </script>
+      </section>
+
+      <section>
+        <section id="fragments">
+          <h2>片段</h2>
+          <p>点击下一步的箭头 ...</p>
+          <p class="fragment">... 逐步通过 ...</p>
+          <p><span class="fragment">... 这是</span><span class="fragment">...片段</span><span class="fragment">...幻灯片。</span></p>
+
+          <aside class="notes">
+            This slide has fragments which are also stepped through in the notes window.
+          </aside>
+        </section>
+        <section>
+          <h2>片段样式</h2>
+          <p>存在不同的片段样式, 例如:</p>
+          <p class="fragment grow">grow</p>
+          <p class="fragment shrink">shrink</p>
+          <p class="fragment fade-out">fade-out</p>
+          <p class="fragment fade-up">fade-up (also down, left and right!)</p>
+          <p class="fragment current-visible">current-visible</p>
+          <p>Highlight <span class="fragment highlight-red">red</span> <span class="fragment highlight-blue">blue</span> <span class="fragment highlight-green">green</span></p>
+        </section>
+      </section>
+
+      <section id="transitions">
+        <h2>过度样式</h2>
+        <p>
+          存在不同的过度样式, 例如: <br>
+          <a href="?transition=none#/transitions">None</a> -
+          <a href="?transition=fade#/transitions">Fade</a> -
+          <a href="?transition=slide#/transitions">Slide</a> -
+          <a href="?transition=convex#/transitions">Convex</a> -
+          <a href="?transition=concave#/transitions">Concave</a> -
+          <a href="?transition=zoom#/transitions">Zoom</a>
+        </p>
+      </section>
+
+      <section id="themes">
+        <h2>主题</h2>
+        <p>
+          reveal.js内置了几个主题: <br>
+          <!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
+          <a href="#" onclick="document.getElementById('theme').setAttribute('href','http://cdn.bootcss.com/reveal.js/3.4.1/css/theme/black.css'); return false;">Black (default)</a> -
+          <a href="#" onclick="document.getElementById('theme').setAttribute('href','http://cdn.bootcss.com/reveal.js/3.4.1/css/theme/white.css'); return false;">White</a> -
+          <a href="#" onclick="document.getElementById('theme').setAttribute('href','http://cdn.bootcss.com/reveal.js/3.4.1/css/theme/league.css'); return false;">League</a> -
+          <a href="#" onclick="document.getElementById('theme').setAttribute('href','http://cdn.bootcss.com/reveal.js/3.4.1/css/theme/sky.css'); return false;">Sky</a> -
+          <a href="#" onclick="document.getElementById('theme').setAttribute('href','http://cdn.bootcss.com/reveal.js/3.4.1/css/theme/beige.css'); return false;">Beige</a> -
+          <a href="#" onclick="document.getElementById('theme').setAttribute('href','http://cdn.bootcss.com/reveal.js/3.4.1/css/theme/simple.css'); return false;">Simple</a> <br>
+          <a href="#" onclick="document.getElementById('theme').setAttribute('href','http://cdn.bootcss.com/reveal.js/3.4.1/css/theme/serif.css'); return false;">Serif</a> -
+          <a href="#" onclick="document.getElementById('theme').setAttribute('href','http://cdn.bootcss.com/reveal.js/3.4.1/css/theme/blood.css'); return false;">Blood</a> -
+          <a href="#" onclick="document.getElementById('theme').setAttribute('href','http://cdn.bootcss.com/reveal.js/3.4.1/css/theme/night.css'); return false;">Night</a> -
+          <a href="#" onclick="document.getElementById('theme').setAttribute('href','http://cdn.bootcss.com/reveal.js/3.4.1/css/theme/moon.css'); return false;">Moon</a> -
+          <a href="#" onclick="document.getElementById('theme').setAttribute('href','http://cdn.bootcss.com/reveal.js/3.4.1/css/theme/solarized.css'); return false;">Solarized</a>
+        </p>
+      </section>
+
+      <section>
+          <section data-background="#dddddd">
+            <h2>幻灯片背景</h2>
+            <p>
+              在幻灯片上设置 <code>data-background="#dddddd"</code> 以更改背景色。支持所有的CSS颜色格式。
+            </p>
+            <a href="#" class="navigate-down">
+              <img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+            </a>
+          </section>
+          <section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
+            <h2>图片背景</h2>
+            <pre><code class="hljs">&lt;section data-background="image.png"&gt;</code></pre>
+          </section>
+          <section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
+            <h2>平铺背景</h2>
+            <pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
+          </section>
+          <section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
+            <div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
+              <h2>视频背景</h2>
+              <pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
+            </div>
+          </section>
+          <section data-background="http://i.giphy.com/90F8aUepslB84.gif">
+            <h2>... 还有 GIF!</h2>
+          </section>
+        </section>
+
+        <section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+          <h2>背景转换</h2>
+          <p>
+            <em>backgroundTransition</em> 选项可以转换不同的背景。<br>This one's called "zoom".
+          </p>
+          <pre><code class="hljs">Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
+        </section>
+
+        <section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+          <h2>背景转换</h2>
+          <p>
+            可以为每个背景单独设置背景转换。
+          </p>
+          <pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
+        </section>
+
+        <section>
+          <h2>代码高亮</h2>
+          <pre><code class="hljs" data-trim contenteditable>
+function linkify( selector ) {
+  if( supports3DTransforms ) {
+
+    var nodes = document.querySelectorAll( selector );
+
+    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
+      var node = nodes[i];
+
+      if( !node.className ) {
+        node.className += ' roll';
+      }
+    }
+  }
+}
+          </code></pre>
+          <p>可以使用<a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>进行代码的高亮显示。</p>
+        </section>
+
+        <section>
+          <h2>优秀的无序List</h2>
+          <ul>
+            <li>No order here</li>
+            <li>Or here</li>
+            <li>Or here</li>
+            <li>Or here</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>优秀的有序List</h2>
+          <ol>
+            <li>One is smaller than...</li>
+            <li>Two is smaller than...</li>
+            <li>Three!</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>表格列表</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Value</th>
+                <th>Quantity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Apples</td>
+                <td>$1</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <td>Lemonade</td>
+                <td>$2</td>
+                <td>18</td>
+              </tr>
+              <tr>
+                <td>Bread</td>
+                <td>$3</td>
+                <td>2</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h2>智能引用</h2>
+          <p>
+            行内引用:<br><q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+            &ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q><br>块引用:
+          </p>
+          <blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+            &ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
+            reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
+          </blockquote>
+        </section>
+
+        <section>
+          <h2>内部链接</h2>
+          <p>
+            可以跳转到当前幻灯片的指定位置,
+            <a href="#/2/3">like this</a>.
+          </p>
+        </section>
+
+        <section>
+          <h2>演讲者视图</h2>
+          <p>这是一个<a href="https://github.com/hakimel/reveal.js#speaker-notes">演讲者视图</a>模式。它包含了一个计时器，预览即将到来的幻灯片以及演讲者笔记。</p>
+          <p>尝试按键盘上的 <em>S</em> 键。</p>
+
+          <aside class="notes">
+            嘿，这是一些演讲者的笔记，它们会隐藏在你的演讲中，但你可以通过演讲者模式看到他们。<br>
+            打开方式是按键盘上的 <em>S</em> 键。
+          </aside>
+        </section>
+
+        <section>
+          <h2>需要一点时间</h2>
+          <p>
+            按 B 键或者 . 键可以暂时关闭演示屏，这个功能在你需要舞台演示，并且不希望屏幕打扰时很有用。
+          </p>
+        </section>
+
+        <section style="text-align: left;">
+          <h1>THE END</h1>
+          <p>
+            - 部分内容与原始文稿有所不同
+          </p>
+        </section>
+
+    </div>
+  </div>
+  <script>
+  Reveal.initialize({
+      // 是否在右下角展示控制条
+      controls: true,
+      // 是否显示演示的进度条
+      progress: true,
+      // 是否显示当前幻灯片的页数
+      slideNumber: 'c/t',
+      history: true,
+      center: true,
+      transition: 'slide',
+      dependencies: [
+          // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+          { src: 'http://cdn.bootcss.com/reveal.js/3.4.1/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          // Interpret Markdown in <section> elements
+          { src: 'http://cdn.bootcss.com/reveal.js/3.4.1/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'http://cdn.bootcss.com/reveal.js/3.4.1/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          // Syntax highlight for <code> elements
+          { src: 'http://cdn.bootcss.com/reveal.js/3.4.1/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          // Zoom in and out with Alt+click
+          { src: 'http://cdn.bootcss.com/reveal.js/3.4.1/plugin/zoom-js/zoom.js', async: true },
+          // Speaker notes
+          { src: 'notes.js', async: true },
+          // MathJax
+          { src: 'http://cdn.bootcss.com/reveal.js/3.4.1/plugin/math/math.js', async: true }
+        ]
+  });
+  </script>
+</body>
+</html>
